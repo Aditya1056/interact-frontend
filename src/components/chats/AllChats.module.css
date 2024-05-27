@@ -1,0 +1,116 @@
+.all-container{
+    width:100%;
+    height:100vh;
+    padding:1.5rem;
+    box-sizing: border-box;
+}
+
+.all-chats{
+    width:100%;
+    height:100%;
+    display:flex;
+    box-shadow:0 0 1px rgb(153, 149, 209);
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.chat-nav{
+    /* border:1px solid rgb(250, 241, 241); */
+    box-shadow:0 1px 1px rgb(147, 162, 225);
+    width:30%;
+    display:flex;
+    flex-direction:column;
+}
+
+.profile-nav{
+    /* border:1px solid red; */
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:8px 15px;
+    background-color:rgb(37, 50, 69);
+}
+
+.profile-nav .profile-nav__image{
+    width:50px;
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    overflow: hidden;
+    cursor: pointer;
+    /* border:1px solid green; */
+}
+
+.profile-nav .profile-nav__image img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.profile-nav button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    padding:8px 10px;
+    font-size:15px;
+    background:rgb(106, 102, 171);
+    color:white;
+    border-radius:5px;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+}
+
+.profile-nav button:hover{
+    background:rgb(212, 208, 249);
+    color:black;
+}
+
+.add-icon{
+    font-size:20px;
+    margin-left:2px;
+}
+
+.search{
+    width:100%;
+    /* border:1px solid blue; */
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-sizing:border-box;
+    padding:10px 0px;
+}
+
+.search input{
+    width:88%;
+    border:none;
+    outline:none;
+    background:rgb(51, 66, 83);
+    color:rgb(255, 255, 255);
+    padding:10px 12px;
+    font-size:15px;
+    border-radius:8px;
+    border:1px solid transparent;
+}
+
+.search input:focus{
+    border:0.5px solid rgb(114, 110, 151);
+}
+
+.outlet{
+    /* border:1px solid blue; */
+    width:70%;
+    height:100%;
+}
+
+@media (max-width:980px){
+    .chat-nav.increase, .outlet.increase{
+        width:100%;
+    }
+    .chat-nav.decrease, .outlet.decrease{
+        width:0%;
+        display:none;
+    }
+}

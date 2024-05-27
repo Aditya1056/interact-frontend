@@ -1,0 +1,37 @@
+.chat-fallback{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* border:1px solid rgb(178, 178, 222); */
+}
+
+.chat-fallback__content{
+    color:rgb(197, 207, 255);
+    text-align: center;
+    /* border:1px solid red; */
+}
+
+.chat-fallback__content h1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /* border:1px solid blue; */
+}
+
+.hand-wave-icon{
+    margin-left:5px;
+    color:rgb(180, 185, 255);
+}
+
+.welcome-text{
+    /* border:1px solid rgb(153, 153, 190); */
+    font-size:20px;
+    margin-top:20px;
+}
+
+.chat-gif{
+    width:250px;
+    /* border:1px solid grey; */
+}

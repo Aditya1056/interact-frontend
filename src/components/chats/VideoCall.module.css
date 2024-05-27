@@ -1,0 +1,248 @@
+.video-call{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:120;
+    box-sizing: border-box;
+    background-color:rgba(0, 0, 0, 0.98);
+    /* border:1px solid blue; */
+}
+
+.video-call-content{
+    width:95%;
+    height:95%;
+    /* border:1px solid red; */
+    box-shadow:0 0 2px rgb(204, 214, 255);
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.on-call{
+    width:100%;
+    height:100%;
+    position:relative;
+}
+
+.my-stream{
+    position:absolute;
+    width:300px;
+    height:200px;
+    top:1%;
+    left:1%;
+    border-radius:5px;
+    overflow:hidden;
+    border:1px solid rgb(173, 211, 255);
+}
+
+.remote-stream{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-video, .remote-video{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    /* border:1px solid green; */
+}
+
+.on-call-actions-container{
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    bottom:3%;
+    width:100%;
+}
+
+.on-call-actions{
+    width:30%;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    /* border:1px solid red; */
+}
+
+.end-call-btn{
+    border:none;
+    border-radius:50%;
+    color:red;
+    padding:15px;
+    background: rgba(0, 0, 0, 0.4);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size:40px;
+    cursor: pointer;
+    transition:0.15s background;
+}
+
+.end-call-btn:hover{
+    background:rgba(255, 216, 214, 0.2);
+}
+
+.toggle-camera-btn, .toggle-audio-btn{
+    border:none;
+    border-radius:50%;
+    color:rgb(168, 190, 255);
+    padding:15px;
+    background: rgba(0, 0, 0, 0.4);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size:40px;
+    cursor: pointer;
+    transition:0.15s background;
+}
+
+.toggle-camera-btn:hover, .toggle-audio-btn:hover{
+    background:rgba(255, 216, 214, 0.2);
+}
+
+.outgoing-call, .incoming-call{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    /* border:1px solid blue; */
+}
+
+.incoming-call h1,.outgoing-call h1{
+    color:rgb(239, 243, 255);
+}
+
+.incoming-call p,.outgoing-call p{
+    color:rgb(188, 210, 255);
+}
+
+.video-call-gif{
+    width:220px;
+    height:220px;
+    margin:25px auto;
+}
+
+.outgoing-actions{
+    margin-top:25px;
+    /* border:1px solid white; */
+}
+
+.incoming-actions{
+    width:40%;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    margin-top:25px;
+    /* border:1px solid white; */
+}
+
+.leave-call{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+
+.leave-call-btn{
+    border:none;
+    border-radius:50%;
+    color:red;
+    padding:15px;
+    background: rgba(255, 23, 11, 0.15);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size:40px;
+    cursor: pointer;
+    transition:0.15s background;
+}
+
+.leave-call-btn:hover{
+    background:rgba(255, 23, 11, 0.32);
+}
+
+.leave-call p{
+    margin-top:12px;
+    color:rgb(255, 233, 226);
+}
+
+.reject-call, .accept-call{
+    /* border:1px solid red; */
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+
+.reject-call-btn{
+    border:none;
+    border-radius:50%;
+    color:red;
+    padding:15px;
+    background: rgba(255, 23, 11, 0.15);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size:40px;
+    cursor: pointer;
+    transition:0.15s background;
+}
+
+.accept-call-btn{
+    border:none;
+    border-radius:50%;
+    color:rgb(2, 255, 27);
+    padding:15px;
+    background: rgba(0, 255, 30, 0.15);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size:40px;
+    cursor: pointer;
+    transition:0.15s background;
+}
+
+.reject-call-btn:hover{
+    background:rgba(255, 23, 11, 0.32);
+}
+
+.accept-call-btn:hover{
+    background:rgba(0, 255, 30, 0.32);
+}
+
+.reject-call p{
+    margin-top:12px;
+    color:rgb(255, 233, 226);
+}
+
+.accept-call p{
+    margin-top:12px;
+    color:rgb(229, 255, 226);
+}
+
+@media (max-width: 980px){
+    .incoming-actions{
+        width:80%;
+    }
+    .my-stream{
+        width:150px;
+        height:200px;
+    }
+    .on-call-actions{
+        width:80%;
+    }
+}
